@@ -42,7 +42,7 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       });});}
       function redirect(name){
             localStorage.setItem("room" ,name);
-            window.location = "kwitterPage.html";
+            window.location = "kwitter_page.html";
             
       }
 getData();
