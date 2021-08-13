@@ -28,7 +28,7 @@ localStorage.setItem("room", room);
 firebase.database().ref("/").child(room).update({
       purpose:"addRoomName"
 })
-window.location = "kwitterPage.html"
+window.location = "kwitter_page.html"
 
 }
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
